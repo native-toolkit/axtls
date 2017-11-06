@@ -6,6 +6,8 @@
 		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/axtls/axTLS/crypto" />
 		<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/axtls/axTLS/ssl" />
 		
+		<compilerflag value="-DWIN32" if="windows"/>
+		
 		<file name="${NATIVE_TOOLKIT_PATH}/axtls/axTLS/crypto/aes.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/axtls/axTLS/crypto/bigint.c" />
 		<file name="${NATIVE_TOOLKIT_PATH}/axtls/axTLS/crypto/crypto_misc.c" />
